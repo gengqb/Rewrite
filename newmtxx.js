@@ -1,3 +1,13 @@
+/*************************************
+
+[rewrite_local]
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/chxm1023/Rewrite/mtxx.js
+
+[mitm]
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
+
+*************************************/
+
 var currentUrl = $request.url;
 var responseData = {};
 
